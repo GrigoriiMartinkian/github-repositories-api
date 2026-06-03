@@ -1,4 +1,7 @@
 package org.example.githubrepositoriesapi.dto;
 
-public class GitBranchDto {
+public record GitBranchDto(
+        String name,
+        CommitDto commit
+) {
 }

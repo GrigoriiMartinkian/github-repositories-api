@@ -1,4 +1,10 @@
 package org.example.githubrepositoriesapi.dto;
 
-public class RepositoryResponseDto {
+import java.util.List;
+
+public record RepositoryResponseDto(
+        String repositoryName,
+        String ownerLogin,
+        List<BranchResponseDto> branches
+) {
 }

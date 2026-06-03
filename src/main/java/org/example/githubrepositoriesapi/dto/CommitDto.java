@@ -1,4 +1,6 @@
 package org.example.githubrepositoriesapi.dto;
 
-public class CommitDto {
+public record CommitDto(
+        String sha
+) {
 }

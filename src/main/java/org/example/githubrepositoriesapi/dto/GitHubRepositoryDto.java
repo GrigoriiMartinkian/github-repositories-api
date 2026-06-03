@@ -1,4 +1,8 @@
 package org.example.githubrepositoriesapi.dto;
 
-public class GitHubRepositoryDto {
+public record GitHubRepositoryDto(
+        String name,
+        boolean fork,
+        OwnerDto owner
+) {
 }

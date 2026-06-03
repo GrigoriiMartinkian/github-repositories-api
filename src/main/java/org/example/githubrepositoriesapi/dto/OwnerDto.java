@@ -1,4 +1,6 @@
 package org.example.githubrepositoriesapi.dto;
 
-public class OwnerDto {
+public record OwnerDto(
+        String login
+) {
 }

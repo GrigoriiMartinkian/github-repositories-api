@@ -1,4 +1,7 @@
 package org.example.githubrepositoriesapi.dto;
 
-public class BranchResponseDto {
+public record BranchResponseDto(
+        String name,
+        String lastCommitSha
+) {
 }

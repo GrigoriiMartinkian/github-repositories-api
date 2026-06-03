@@ -4,15 +4,14 @@ import org.example.githubrepositoriesapi.dto.GitBranchDto;
 import org.example.githubrepositoriesapi.dto.GitHubRepositoryDto;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
-
 import java.util.List;
 
 @Component
-public final class GitHubClient {
+public final class GitHubClientImpl implements GitHubClient {
 
     private final RestClient restClient;
 
-    public GitHubClient(RestClient restClient) {
+    public GitHubClientImpl(RestClient restClient) {
         this.restClient = restClient;
     }
 

@@ -1,4 +1,7 @@
 package org.example.githubrepositoriesapi.dto;
 
-public class ErrorResponseDto {
+public record ErrorResponseDto(
+        int status,
+        String message
+) {
 }

@@ -1,16 +1,16 @@
 package org.example.githubrepositoriesapi.controller;
 
+import org.example.githubrepositoriesapi.dto.RepositoryResponseDto;
+import org.example.githubrepositoriesapi.service.GitHubService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import org.example.githubrepositories.dto.RepositoryResponseDto;
-import org.example.githubrepositories.service.GitHubService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/github")
+@RequestMapping("/api/v1/github")
 public final class GitHubController {
 
     private final GitHubService service;
